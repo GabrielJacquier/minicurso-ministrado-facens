@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Bem vindo</h1>
+        {% for filme in filmes %}
+            <div>
+                {{filme['original_title']}}
+                <img src="http://image.tmdb.org/t/p/w185/{{filme['poster_path']}}"></img>
+            </div>
+        {% endfor %}
+    </body>
+</html>
